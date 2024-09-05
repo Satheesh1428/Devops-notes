@@ -1,12 +1,14 @@
 Shell scripting:
 
 Listing folders/files:
+=============================================================================================================
 Ls –Listing
 ls -A : it will show hidden files
 ls -l :  listing with complete details
 ls -LA : listing with hidden files as well
 ls -ltr
 File concepts:
+=============================================================================================================
 touch <filename> : to create file name
 rm /rm -f  <file name> : to remove file name
 cp  < source file name>  <target file name> : to copy from one file to another file
@@ -18,15 +20,15 @@ cat – to print the content of the file on screen.
       tail     <filename> : last 10 lines it will show
 sh <filename.sh>  or  ./ <filename.sh>   --- to execute a script file
 
-How to find command options:  man ,   ex: man ls
 Memory:
+===============================================================================================================
 Nproc
 Free
 Top
 Df
 
-
 Processers:
+================================================================================================================
 Ps -ef – to find processers which are running
 Ps -ef | grep “ amzon”
 grep :  to find something
@@ -34,35 +36,33 @@ Pipe: it is used to send output to second command from first comman
 awk: column based filtering :    -F :  ‘ {print $1}’  <filename)
 
 Set commands:
+=================================================================================================================
 Set -x   # debug mode
 Set  - e  # exit the script when there is an error
 Set  -o  pipe fail   #  exit the script when pipe fail issues
 
-
-
-
 Shebang:
+=================================================================================================================
 #!/bin is the first syntax in script called as shebang
 #!/bin {/bash  /dash   /sh   /ksh}	     Linux executables
-
 #!/bin/bash  and #!/bin/sh  both are same in couple of years back since even if we use #!/bin/sh  in back end it will direct to default shebang is #!/bin/bash  by using soft link
 But now they are different since some linux vendors are made default she bang as #!/bin/dash
 Permissions:
 CHMOD : grant permissions for files/directories
-
-
-
-
 4:  for read,  3 : for write , 1 : for execute   permissions
 Chmod 777 <file name> -- it gives all permissions
 
-
 Directories
+=================================================================================================================
 PWD: present working directory
 mkdir  <directory name> : to create directory
 cd :  change directory
 cp -r  <source directory > <target directory>  : to copy content from one directory to another directory
 rm/rm -r/rm -rf : to remove directories
+
+Other:
+=================================================================================================================
+How to find command options:  man ,   ex: man ls
 
 curl :  it is used to browse the url content and download the files
            curl -L  <url name>  curl  -O , curl -o
@@ -78,15 +78,13 @@ find  <loation-name> <search -criteria> : it is used to find the file
 sudo su -    : it will switch the user to root
 
 if statement:
+=================================================================================================================
   if [expression]
   then
        statements
   else
        statements
   fi
-
-
-
 
 Integers can be compared with these operators:
 -eq # Equal
@@ -97,7 +95,7 @@ Integers can be compared with these operators:
 -ge # Greater than or equal
 
 For loop:
-
+================================================================================================================
 for i in {2..10}
 
 do
@@ -105,6 +103,7 @@ do
 done
 
 signals and trap
+=================================================================================================================
 
 trap will trap the signals
 
