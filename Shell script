@@ -45,7 +45,8 @@ Shebang:
 =================================================================================================================
 #!/bin is the first syntax in script called as shebang
 #!/bin {/bash  /dash   /sh   /ksh}	     Linux executables
-#!/bin/bash  and #!/bin/sh  both are same in couple of years back since even if we use #!/bin/sh  in back end it will direct to default shebang is #!/bin/bash  by using soft link
+#!/bin/bash  and #!/bin/sh  both are same in couple of years back
+since even if we use #!/bin/sh  in back end it will direct to default shebang is #!/bin/bash  by using soft link
 But now they are different since some linux vendors are made default she bang as #!/bin/dash
 Permissions:
 CHMOD : grant permissions for files/directories
